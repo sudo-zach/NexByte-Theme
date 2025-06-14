@@ -1,4 +1,42 @@
-# ElegantFin Theme *Modifed*
+> [!CAUTION]
+> There is **absolutely zero guarentee** that this theme will be kept updated. **Zero support will be provided** for people who use this theme. This theme was designed specifically for personal use.
+
+# NexByte Theme
+A modified version of ElegantFin designed specifically for my Jellyfin server.
+
+### 👇 How to install/setup this theme? 
+
+<b>Paste the following in Custom CSS code box:</b>
+
+	@import url("https://cdn.jsdelivr.net/gh/sudo-zach/NexByte-Theme@latest/theme/minified-theme.css");
+
+<details>
+  <summary><i>Detailed steps for server-side implementation</i></summary>
+
+1. Open Dashboard from Administration tab in Settings.
+2. Select General tab from the side bar.
+3. Scroll down to find Custom CSS code box under Branding section.
+4. Paste the custom css in Custom CSS code box.
+5. Click save
+</details>
+
+<details>
+  <summary><i>Detailed steps for client-side implementation</i></summary>
+
+1. Open Display tab in Settings.
+2. Scroll down to find Custom CSS code box.
+3. Paste the custom css in Custom CSS code box.
+4. Click save.
+</details>
+
+<br/>
+
+### Original Project Readme
+
+<details>
+  <summary>Expand</summary>
+
+# ElegantFin Theme
 This is a Jellyfin theme inspired from JellySeerr to improve the overall look and experience with various fixes to the UI and behaviour.
 
 #### **Author:** [lscambo13](https://github.com/lscambo13)
@@ -44,7 +82,7 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 
 <b>Paste the following in Custom CSS code box:</b>
 
-	@import url("https://cdn.jsdelivr.net/gh/sudo-zach/NexByte-Theme@latest/Theme/minified-theme.css");
+	@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/ElegantFin-jellyfin-theme-build-latest-minified.css");
 
 <details>
   <summary><i>Detailed steps for server-side implementation</i></summary>
@@ -166,3 +204,5 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 
 
 ## 🙏 FEEDBACK APPRECIATED
+
+</details>
