@@ -1,6 +1,5 @@
-# ElegantFin Theme
+# ElegantFin Theme *Modifed*
 This is a Jellyfin theme inspired from JellySeerr to improve the overall look and experience with various fixes to the UI and behaviour.
-
 
 #### **Author:** [lscambo13](https://github.com/lscambo13)
 
@@ -45,7 +44,7 @@ https://github.com/user-attachments/assets/7a492f89-9c82-4038-a07a-a9a59e4f8eef
 
 <b>Paste the following in Custom CSS code box:</b>
 
-	@import url("https://cdn.jsdelivr.net/gh/lscambo13/ElegantFin@main/Theme/ElegantFin-jellyfin-theme-build-latest-minified.css");
+	@import url("https://cdn.jsdelivr.net/gh/sudo-zach/NexByte-Theme@latest/Theme/minified-theme.css");
 
 <details>
   <summary><i>Detailed steps for server-side implementation</i></summary>
