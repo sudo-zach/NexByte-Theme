@@ -8,7 +8,7 @@ A modified version of ElegantFin designed specifically for my Jellyfin server.
 
 <b>Paste the following in Custom CSS code box:</b>
 
-	@import url("https://cdn.jsdelivr.net/gh/sudo-zach/NexByte-Theme@main/theme/minified-theme.css");
+	@import url('https://sudo-zach.github.io/NexByte-Theme/theme/minified-theme.css');
 
 <details>
   <summary><i>Detailed steps for server-side implementation</i></summary>
