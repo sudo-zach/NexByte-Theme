@@ -4,49 +4,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root {
-    --nexByteFooterText: "NexByte v0.0.1";
+    --nexByteFooterText: "NexByte v0.0.2";
     color-scheme: dark;
-    --darkerGradientPoint: #111827;
-    --darkerGradientPointAlpha: rgba(17, 24, 39, 0.85);
-    --lighterGradientPoint: #1d2635;
-    --lighterGradientPointAlpha: rgba(29, 38, 53, 0.85);
-    --borderColor: rgb(71, 80, 92);
-    --lighterBorderColor: rgb(255 255 255 / 20%);
-    --headerColor: rgba(30, 40, 54, 0.8);
-    --drawerColor: rgba(30, 40, 54, 0.9);
-    --selectorBackgroundColor: rgb(55, 65, 81);
-    --selectorBackgroundColorAlpha: rgba(55, 65, 81, 0.5);
-    --btnDeleteColor: rgb(169, 29, 29);
-    --btnDeleteBorderColor: rgb(217, 84, 84);
-    --btnSubmitColor: rgb(61, 54, 178);
-    --btnSubmitBorderColor: rgb(117 111 226);
-    --checkboxCheckedBgColor: rgb(79, 70, 229);
-    --highlightOutlineColor: rgb(37, 99, 235);
-    --textColor: rgb(209, 213, 219);
-    --dimTextColor: rgb(156, 163, 175);
-    --activeColorAlpha: rgba(119, 91, 244, 0.9);
-    --activeColor: rgb(119, 91, 244);
-    --tableBodyColor: rgb(31 41 55 / 1);
-    --uiAccentColor: rgb(117 111 226);
-    --btnMiniPlayColor: rgb(41 154 93);
-    --btnPlayBorderColor: color-mix(in srgb, var(--btnMiniPlayColor), rgb(255, 255, 255) 5%);
+    --darkerGradientPoint: #020202;
+    --darkerGradientPointAlpha: #111827d9;
+    --lighterGradientPoint: #020202;
+    --lighterGradientPointAlpha: #1d2635d9;
+    --borderColor: transparent !important;
+    --lighterBorderColor: transparent !important;
+    --headerColor: #020202;
+    --drawerColor: #020202;
+    --selectorBackgroundColor: #101011 !important;
+    --selectorBackgroundColorAlpha: #10101180;
+    --btnDeleteColor: #a91d1d;
+    --btnDeleteBorderColor: transparent !important;
+    --btnSubmitColor: #ff0000;
+    --btnSubmitBorderColor: transparent !important;
+    --checkboxCheckedBgColor: #ff0000;
+    --highlightOutlineColor: transparent !important;
+    --textColor: #d1d5db;
+    --dimTextColor: #9ca3af;
+    --activeColorAlpha: #ff0000e6;
+    --activeColor: #ff0000;
+    --tableBodyColor: #1f2937;
+    --uiAccentColor: #ff0000;
+    --btnMiniPlayColor: #ff0000;
+    --btnPlayBorderColor: transparent !important;
     --backgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint) 35%, var(--lighterGradientPoint));
     --cardBackgroundGradient: linear-gradient(0deg, var(--darkerGradientPoint), var(--lighterGradientPoint) 25%);
-    --hoverGradientA: linear-gradient(130deg, rgb(255 255 255 / 35%) 20%, rgb(255 255 255 / 15%) 40%);
-    --hoverGradientB: radial-gradient(100% 250% at 90% 190%, rgba(255, 255, 255, 0.15) 85%, rgba(255, 255, 255, 0.33) 100%);
-    --shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+    --hoverGradientA: linear-gradient(130deg, #ffffff59 20%, #ffffff26 40%);
+    --hoverGradientB: radial-gradient(100% 250% at 90% 190%, #ffffff26 85%, #ffffff54 100%);
+    --shadow: 0 2px 2px 0 #00000024, 0 1px 5px 0 #0000001f, 0 3px 1px -2px #00000033;
     --largerRadius: 1.25em;
     --largeRadius: 1em;
     --smallRadius: .5em;
     --smallerRadius: .375em;
-    --borderWidth: 0.075em;
-    --defaultBorder: var(--borderWidth) solid var(--borderColor);
-    --defaultLighterBorder: var(--borderWidth) solid var(--lighterBorderColor);
+    --borderWidth: 0px;
+    --defaultBorder: 0px solid transparent !important;
+    --defaultLighterBorder: 0px solid transparent !important;
 
     /* login page customizations */
     /* --loginPageBgUrl: url("<YOUR-JELLYFIN-SERVER-ADDRESS>/Branding/Splashscreen?format=webp&foregroundLayer=1&quality=33&width=3840&height=2160&blur=2"); */
-    --loginPageBgUrl: url("");
-    --loginPageText: "Sign in to continue";
+    --loginPageBgUrl: url("http://192.168.2.14:8096/Branding/Splashscreen?format=png&foregroundLayer=1&quality=33&width=3840&height=2160&blur=2");
+    --loginPageText: "Sign In to Continue";
 
     --blurSmallest: blur(2px);
     --blurDefault: blur(5px);
@@ -55,6 +55,13 @@
 
     /* to revert to old icons, use 'Material Icons'*/
     --iconPack: 'Material Icons Round';
+}
+
+.emby-input,
+.emby-select,
+.emby-textarea,
+.emby-select-withcolor {
+    background-color: #020202 !important;
 }
 
 html {
@@ -1247,7 +1254,7 @@ div[data-isfolder="true"] .cardText-first+.itemSelectionPanel>.checkboxContainer
 }
 
 .playedIndicator {
-    background: rgb(34, 197, 94);
+    background: #ff0000 !important;
     border: var(--defaultLighterBorder);
 }
 
@@ -2139,7 +2146,7 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 
 #loginPage .padded-left.padded-right.padded-bottom-page {
     width: 28em;
-    background: rgba(30, 40, 54, 0.7);
+    background: #020202;
     padding: 2em 2em 1em 2em !important;
     border-radius: var(--largerRadius);
     backdrop-filter: var(--blurDefault);
@@ -2404,4 +2411,24 @@ ul.MuiList-root.MuiMenu-list.MuiList-dense>div:first-child {
 
 #viewPanel .ui-panel-inner {
     margin-top: 4em;
+}
+
+.countIndicator,
+.fullSyncIndicator,
+.mediaSourceIndicator {
+    background: #ff0000 !important;
+}
+
+.itemProgressBar:not(.backgroundProgress, .playbackProgress, .transcodingProgress) {
+    background-color: transparent !important;
+}
+
+.itemProgressBarForeground {
+    background-color: #ff0000 !important;
+}
+
+.listItem:hover,
+.css-17c09up:hover,
+.navMenuOption:hover {
+    background-color: #101011 !important;
 }
